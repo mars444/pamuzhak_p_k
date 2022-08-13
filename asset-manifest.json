@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mars444/alsdent/static/css/main.073c9b0a.css",
-    "main.js": "/mars444/alsdent/static/js/main.a1686cab.js",
+    "main.js": "/mars444/alsdent/static/js/main.d637d988.js",
     "static/media/logo.svg": "/mars444/alsdent/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/mars444/alsdent/index.html",
     "main.073c9b0a.css.map": "/mars444/alsdent/static/css/main.073c9b0a.css.map",
-    "main.a1686cab.js.map": "/mars444/alsdent/static/js/main.a1686cab.js.map"
+    "main.d637d988.js.map": "/mars444/alsdent/static/js/main.d637d988.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a1686cab.js"
+    "static/js/main.d637d988.js"
   ]
 }

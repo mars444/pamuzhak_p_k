@@ -1,0 +1,5 @@
+export * from './MainPage'
+export * from './JuridicalInfo'
+export * from './Prices'
+export * from './Contacts'
+export * from './MainPage'

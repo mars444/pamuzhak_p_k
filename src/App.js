@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
         <Router>
-            <div className='flex justify-content-center gap-5'>
-                {mainRoutes.map(({path}) => <NavLink key={path} to={path}>{path}</NavLink>)}
+            <div className='flex justify-content-center gap-5 m-5'>
+                {mainRoutes.map(({path,name}) => <NavLink key={path} to={path}>{name}</NavLink>)}
             </div>
 
             <Switch>

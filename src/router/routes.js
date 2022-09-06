@@ -23,5 +23,10 @@ export const mainRoutes = [
         Component: JuridicalInfo,
         name: 'Юридическая информация',
     },
+    {
+        path: "/juridicalInfo",
+        Component: JuridicalInfo,
+        name: 'Наш адрем',
+    },
 
 ];

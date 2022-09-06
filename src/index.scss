@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background-main {
+background: linear-gradient(134deg, rgb(182, 237, 200) 0%, rgb(227, 240, 255) 40%, rgb(245, 247, 250) 80%)
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.absolute-full {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+.page-content {
+  width: 1200px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a {
+  color: black;
+}

@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/pamuzhak_p_k/static/css/main.a49085b5.css",
-    "main.js": "/pamuzhak_p_k/static/js/main.8a3f3792.js",
+    "main.css": "/pamuzhak_p_k/static/css/main.e85fa844.css",
+    "main.js": "/pamuzhak_p_k/static/js/main.dd77fa19.js",
+    "static/media/resume_Pamuzhak_PK.pdf": "/pamuzhak_p_k/static/media/resume_Pamuzhak_PK.4a7b4932ee202332ebce.pdf",
     "static/media/primeicons.svg": "/pamuzhak_p_k/static/media/primeicons.c6e2053303524e39530c.svg",
+    "static/media/me.jpg": "/pamuzhak_p_k/static/media/me.d307bb331bf14a448ab6.jpg",
     "static/media/Montserrat-BoldItalic.woff": "/pamuzhak_p_k/static/media/Montserrat-BoldItalic.bf331673b91821715c08.woff",
     "static/media/Montserrat-BlackItalic.woff": "/pamuzhak_p_k/static/media/Montserrat-BlackItalic.fbf405b6c45f55a09aec.woff",
     "static/media/Montserrat-ExtraBoldItalic.woff": "/pamuzhak_p_k/static/media/Montserrat-ExtraBoldItalic.1357e84ca56356a41d5c.woff",
@@ -42,13 +44,12 @@
     "static/media/primeicons.eot": "/pamuzhak_p_k/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
     "static/media/primeicons.woff": "/pamuzhak_p_k/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
     "static/media/primeicons.ttf": "/pamuzhak_p_k/static/media/primeicons.91bacab1f083f2795272.ttf",
-    "static/media/telegram-logo.svg": "/pamuzhak_p_k/static/media/telegram-logo.c4584eb0c71e456ad6072362aa8e1c1e.svg",
     "index.html": "/pamuzhak_p_k/index.html",
-    "main.a49085b5.css.map": "/pamuzhak_p_k/static/css/main.a49085b5.css.map",
-    "main.8a3f3792.js.map": "/pamuzhak_p_k/static/js/main.8a3f3792.js.map"
+    "main.e85fa844.css.map": "/pamuzhak_p_k/static/css/main.e85fa844.css.map",
+    "main.dd77fa19.js.map": "/pamuzhak_p_k/static/js/main.dd77fa19.js.map"
   },
   "entrypoints": [
-    "static/css/main.a49085b5.css",
-    "static/js/main.8a3f3792.js"
+    "static/css/main.e85fa844.css",
+    "static/js/main.dd77fa19.js"
   ]
 }

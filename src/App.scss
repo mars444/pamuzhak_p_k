@@ -11,13 +11,19 @@
 }
 
 .App {
-  position: relative;
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  //overflow: hidden;
+  //position: relative;
+  //min-height: 100vh;
+  //height: 100vh;
+  width: 100%;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
   justify-content: center;
+    font-size: 1.6rem;
+    font-family: 'Figtree', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text-secondary);
 }
 a {
   text-decoration: none;
@@ -41,3 +47,5 @@ ul {
     transform: rotate(360deg);
   }
 }
+
+

@@ -2,32 +2,41 @@ import React, {useEffect, useMemo} from 'react';
 import {Menubar} from "primereact/menubar";
 import './Header.scss'
 import {Button} from "primereact/button";
-import {menuItems} from "../../localeBD/menuItems";
+import {menuItems, navLinks} from "../../localeBD/DB";
 import {Link} from "react-router-dom";
 import HamburgerMenu from "./Hamburger";
 import {useMediaQuery} from "react-responsive";
-export const Header = React.memo(({items}) => {
+import {ThemePicker} from "../ThemeProvider";
+export const Header = React.memo(() => {
 
     const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
 
     return (
-        <header className='flex gap-2 justify-content-between header align-items-center w-full p-3 h-5rem'>
-            <div className='flex gap-2'>
-                <h3 className='logo'>
-                    Logo
-                </h3>
-                {!isMobile && <div style={{width:'60px', height:'60px', borderRadius: '50%'}}></div>}
+        <header className='header flex justify-content-between gap-5 align-items-center'>
+            <h1 className="logo">PK</h1>
+            <ol className="flex flex-grow-1 navList justify-content-end gap-5 align-items-center relative ">
+                {navLinks?.map(({label, url}, index) => {
+                    return (
+                        <li  style={{transitionDelay: `${index * 200}`}} key={label}>
+                            <a href={url}>{label}</a>
+                        </li>
 
-
+                    )
+                })}
+            </ol>
+            <div
+                className="fadedown-enter-done">
+                <a className="menu-button"
+                   href="https://t.me/Mars_444"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Связаться со мной
+                </a>
             </div>
+            <ThemePicker/>
 
-            <h1 className='text-center'>AlsDent</h1>
-            <div className='flex gap-2'>
-                {!isMobile &&  <a style={{width:'60px', height:'60px', borderRadius: '50%'}} href="tel:+79031199353" className="header__menu__button">
-                    <i  style={{'fontSize': '25px'}} className="pi pi-phone"></i>
-                    </a>}
-                <HamburgerMenu items={items}/>
-            </div>
+
+                {/*<HamburgerMenu items={items}/>*/}
 
 
         </header>

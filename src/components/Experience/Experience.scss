@@ -1,0 +1,21 @@
+.custom-marker {
+  color: var(--primary);
+  background:var(--primary);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.card {
+  background-color: transparent !important;
+  opacity: 0.8 !important;
+  color: var(--text-primary) !important;
+  a {
+    color: var(--primary);
+  }
+  ul {
+      list-style: none;
+    position: relative;
+  }
+
+}

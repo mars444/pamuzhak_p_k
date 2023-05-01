@@ -17,7 +17,6 @@ const MenuLabel = styled.label`
   border-radius: 50%;
   height: 60px;
   width: 60px;
-  cursor: pointer;
   z-index: 1000;
   box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;

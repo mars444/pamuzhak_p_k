@@ -3,7 +3,7 @@ export const experience = [
     {
         interval: 'Апрель 2022 — по настоящее время',
         company: 'АО «Паспорт.Цифровые продукты» (АО «П.ЦП»)',
-        position: 'Junior Frontend - разработчик',
+        position: 'Frontend - разработчик',
         url: 'https://sharobot.ru/msk',
         list_1: [
            'Разработка и поддержка пользовательского интерфейса веб-приложений;',
@@ -17,9 +17,9 @@ export const experience = [
            'Переписывал проекты на typescript и рефакторил код всего web-сервиса;',
            'Написал скрипт для парсинга полей Java классов из бэкенда в typescript интерфейсы, что позволило фронтенд команде создавать новые типы в 10-ки раз быстрее;'
         ],
-        list_3: [
-            'Стек: React, Redux, Redux-thunk, react-final-form, primereact, primeflex, webpack, eslint.\n'
-        ]
+        // list_3: [
+        //     'Стек: React, Redux, Redux-thunk, react-final-form, primereact, primeflex, webpack, eslint.\n'
+        // ]
     },
     {
         interval: 'Октябрь 2022 — по настоящее время',

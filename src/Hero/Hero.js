@@ -30,7 +30,7 @@ export const Hero = () => {
     );
     const five = (
         <div className="py-5">
-            <a  className="resume-btn text-4xl" href={resume} target="_blank" rel="noreferrer">
+            <a  className="resume-btn text-2xl" href={resume} target="_blank" rel="noreferrer">
                 <span> </span>
                 <span> </span>
                 <span> </span>
@@ -47,7 +47,7 @@ export const Hero = () => {
     const items = [one, two, three, four, five];
 
     return (
-            <div className={"hero"}>
+            <section className={"hero"}>
                 <TransitionGroup component={null}>
                     {isMounted &&
                         items.map((item, i) => (
@@ -56,7 +56,7 @@ export const Hero = () => {
                             </CSSTransition>
                         ))}
                 </TransitionGroup>
-            </div>
+            </section>
 
     );
 };

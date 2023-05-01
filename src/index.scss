@@ -244,14 +244,18 @@ html,body {
 
 ::-webkit-scrollbar-track
 {
-  background-color: transparent;
+  background-color: transparent !important;
   border-radius: 10px;
+  display: none;
 }
 
 ::-webkit-scrollbar
 {
   width: 7px;
-  background: transparent;
+  background: transparent !important;
+}
+body {
+  overflow: overlay;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -303,15 +307,7 @@ html,body {
   transition: opacity 300ms var(--easing);
 }
 
-.numbered-heading {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin: 10px 0 40px;
-  width: 100%;
-  font-size: clamp(26px, 5vw, var(--fz-heading));
-  white-space: nowrap;
-
+.contact-title {
   &:before {
     position: relative;
     bottom: 0px;
@@ -327,6 +323,35 @@ html,body {
       margin-right: 5px;
     }
   }
+}
+
+.numbered-heading {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, var(--fz-heading));
+  white-space: nowrap;
+
+  &-title {
+      position: relative;
+      bottom: 8px;
+      counter-increment: section;
+      content: '0' counter(section) '.';
+      margin-right: 10px;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+      font-weight: 400;
+
+      @media (max-width: 480px) {
+        margin-bottom: -3px;
+        margin-right: 5px;
+      }
+  }
+
+
 
   &:after {
     content: '';

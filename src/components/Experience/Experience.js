@@ -10,7 +10,11 @@ import './Experience.scss'
 export const Experience = React.memo(() => {
     return (
         <div id={"experience"} style={{paddingTop: 100, maxWidth: 1000}} className={"flex flex-column"}>
-            <h3 className="numbered-heading text-4xl">Опыт работы 2 года 8 месяцев</h3>
+            <div className="flex gap-1 align-items-center">
+                <h3 className="numbered-heading-title">03.</h3>
+                <h3 className="numbered-heading text-4xl">Опыт работы 2 года 8 месяцев</h3>
+            </div>
+
          <TimelineDemo/>
         </div>
     );
@@ -32,8 +36,9 @@ const TimelineDemo = () => {
 
     const customizedContent = (item) => {
         return (
-            <Card subTitle={<a className={"text-3xl underline-link"} href={item.url}>{item.company}</a>}  className={"card"} >
-                <div className={"text-3xl pb-2"}>{item.position}</div>
+            <div subTitle={<a className={"text-3xl underline-link"} href={item.url}>{item.company}</a>}  className={"card"} >
+                <a className={"text-3xl mb-3 underline-link"} href={item.url}>{item.company}</a>
+                <div className={"text-2xl pb-2"}>{item.position}</div>
                 <h3 className="py-2">{item.interval}</h3>
 
                 <ul className="py-2">
@@ -57,7 +62,7 @@ const TimelineDemo = () => {
                         )
                     })}
                 </ul>
-            </Card>
+            </div>
         );
     };
 

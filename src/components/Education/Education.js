@@ -282,10 +282,14 @@ const StyledProject = styled.li`
 
 export const Education = () => {
     return (
-        <section style={{marginTop: 100, maxWidth: 1000}} id="education">
-            <h2 className="numbered-heading" >
-                Образование
-            </h2>
+        <section style={{paddingTop: 100, maxWidth: 1000}} id="education">
+            <div className="flex gap-1 align-items-center">
+                <h3 className="numbered-heading-title">02.</h3>
+                <h2 className="numbered-heading" >
+                    Образование
+                </h2>
+            </div>
+
             <StyledProject>
                 <a href="https://rosnou.ru/" className="underline-link color">Российский новый университет, Москва (2024)</a>
                 <div className="project-tech-list">

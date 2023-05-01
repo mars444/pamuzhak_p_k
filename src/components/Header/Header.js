@@ -33,7 +33,7 @@ export const Header = React.memo(() => {
                     Связаться со мной
                 </a>
             </div>
-            <ThemePicker/>
+            {/*<ThemePicker/>*/}
 
 
                 {/*<HamburgerMenu items={items}/>*/}

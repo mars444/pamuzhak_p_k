@@ -91,8 +91,12 @@ export const About = () => {
     ];
 
     return (
-        <div className={"flex flex-column"} style={{maxWidth: 1000, marginTop: 100}} id="about" >
-            <h3 className="numbered-heading text-4xl">Обо мне</h3>
+        <div className={"flex flex-column"} style={{maxWidth: 1000, paddingTop: 100}} id="about" >
+            <div className="flex gap-1 align-items-center">
+                <h3 className="numbered-heading-title">01.</h3>
+                <h3 className="numbered-heading text-4xl">Обо мне</h3>
+            </div>
+
 
             <div className="flex flex-column align-items-start">
                 <div  className="flex gap-7 align-items-start">
@@ -128,7 +132,7 @@ export const About = () => {
                     <ul className="flex gap-3 flex-wrap">
                         {skills && skills.map((skill, i) => {
                             return (
-                                <Chip label={skill.label} icon={skill.icon} className="chip py-2 px-3 " />
+                                <Chip label={skill.label}  className="chip py-1 px-2 " />
                             )
                         })}
                     </ul>

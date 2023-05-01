@@ -50,13 +50,13 @@ export const ThemePicker = React.memo(()=> {
             top = '0'
             break;
         case 'sunset':
-            top = '-3.6rem'
+            top = '-1.7rem'
             break;
         case 'sunrise':
-            top = '-7.1rem'
+            top = '-3.5rem'
             break;
         case 'light':
-            top = '-10.7rem'
+            top = '-5.2rem'
             break;
     }
 

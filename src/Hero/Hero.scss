@@ -56,6 +56,21 @@
     transition: var(--transition);
     margin-top: 50px;
   }
+
+  .box .content{
+    position:absolute;
+    top:15px;
+    left:15px;
+    right:15px;
+    bottom:15px;
+    border:1px solid #f0a591;
+    padding:20px;
+    text-align:center;
+    box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+
+  }
+
+
 }
 
 

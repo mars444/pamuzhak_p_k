@@ -2,3 +2,10 @@
   background: var(--surface);
   color: var(--text-secondary);
 }
+.img-content{
+  border-radius: 30px;
+  overflow: hidden;
+  img {
+    display: block;
+  }
+}

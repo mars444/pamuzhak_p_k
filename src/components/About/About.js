@@ -108,13 +108,19 @@ export const About = () => {
                         <p>Для меня фронтенд-разработка - это не просто работа, это моя страсть
                         </p>
                     </div>
-                    <div>
-                        <img
-                            className="img"
-                            src={mePhoto}
-                            width={400}
-                            alt="Headshot"
-                        />
+                        <div className="box  relative">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div className="img-content">
+                                <img
+                                    className="img"
+                                    src={mePhoto}
+                                    width={400}
+                                    alt="Headshot"
+                                />
+                            </div>
                     </div>
                 </div>
                 <div>

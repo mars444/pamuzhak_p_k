@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/pamuzhak_p_k/static/css/main.7480f44a.css",
-    "main.js": "/pamuzhak_p_k/static/js/main.fdb52e3f.js",
-    "static/media/resume_Pamuzhak_PK.pdf": "/pamuzhak_p_k/static/media/resume_Pamuzhak_PK.4a7b4932ee202332ebce.pdf",
+    "main.js": "/pamuzhak_p_k/static/js/main.4fc271f5.js",
     "static/media/primeicons.svg": "/pamuzhak_p_k/static/media/primeicons.c6e2053303524e39530c.svg",
     "static/media/Montserrat-BoldItalic.woff": "/pamuzhak_p_k/static/media/Montserrat-BoldItalic.bf331673b91821715c08.woff",
     "static/media/Montserrat-BlackItalic.woff": "/pamuzhak_p_k/static/media/Montserrat-BlackItalic.fbf405b6c45f55a09aec.woff",
@@ -22,6 +21,7 @@
     "static/media/Montserrat-Light.woff": "/pamuzhak_p_k/static/media/Montserrat-Light.8749526d8f2dedc12457.woff",
     "static/media/Montserrat-ExtraLight.woff": "/pamuzhak_p_k/static/media/Montserrat-ExtraLight.eb5fb69f4f236dfa5051.woff",
     "static/media/Montserrat-Thin.woff": "/pamuzhak_p_k/static/media/Montserrat-Thin.860b087ddabb8440b248.woff",
+    "static/media/Pamuzhak_PK_Frontend_Developer.pdf": "/pamuzhak_p_k/static/media/Pamuzhak_PK_Frontend_Developer.f80cbe2cd64b9a7ddc8e.pdf",
     "static/media/Montserrat-BoldItalic.woff2": "/pamuzhak_p_k/static/media/Montserrat-BoldItalic.dd8646a41e4397b77fc4.woff2",
     "static/media/Montserrat-MediumItalic.woff2": "/pamuzhak_p_k/static/media/Montserrat-MediumItalic.ecdfe4c05425592708aa.woff2",
     "static/media/Montserrat-ExtraBoldItalic.woff2": "/pamuzhak_p_k/static/media/Montserrat-ExtraBoldItalic.b7db420c3da9802bb44d.woff2",
@@ -46,10 +46,10 @@
     "static/media/me.jpg": "/pamuzhak_p_k/static/media/me.bf01e96f1d8405be7b5b.jpg",
     "index.html": "/pamuzhak_p_k/index.html",
     "main.7480f44a.css.map": "/pamuzhak_p_k/static/css/main.7480f44a.css.map",
-    "main.fdb52e3f.js.map": "/pamuzhak_p_k/static/js/main.fdb52e3f.js.map"
+    "main.4fc271f5.js.map": "/pamuzhak_p_k/static/js/main.4fc271f5.js.map"
   },
   "entrypoints": [
     "static/css/main.7480f44a.css",
-    "static/js/main.fdb52e3f.js"
+    "static/js/main.4fc271f5.js"
   ]
 }

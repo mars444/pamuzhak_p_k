@@ -5,17 +5,6 @@ import './Hero.scss'
 import resume from '../assets/pdf/resume_Pamuzhak_PK.pdf'
 
 export const Hero = () => {
-    const [isMounted, setIsMounted] = useState(false);
-    const prefersReducedMotion = usePrefersReducedMotion();
-
-    useEffect(() => {
-        if (prefersReducedMotion) {
-            return;
-        }
-
-        const timeout = setTimeout(() => setIsMounted(true), navDelay);
-        return () => clearTimeout(timeout);
-    }, []);
 
     const one = <h1 className={"pb-1 text-m"}>Привет, меня зовут</h1>;
     const two = <AnimatedText text={'ПАМУЖАК ПЕТР'}/>
@@ -49,11 +38,8 @@ export const Hero = () => {
     return (
             <section className={"hero"}>
                 <TransitionGroup component={null}>
-                    {isMounted &&
-                        items.map((item, i) => (
-                            <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
+                    {items.map((item, i) => (
                                 <div>{item}</div>
-                            </CSSTransition>
                         ))}
                 </TransitionGroup>
             </section>

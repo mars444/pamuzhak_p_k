@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pamuzhak_p_k/static/css/main.ee2cbcd8.css",
-    "main.js": "/pamuzhak_p_k/static/js/main.33cf899a.js",
+    "main.css": "/pamuzhak_p_k/static/css/main.7480f44a.css",
+    "main.js": "/pamuzhak_p_k/static/js/main.b34798c1.js",
     "static/media/resume_Pamuzhak_PK.pdf": "/pamuzhak_p_k/static/media/resume_Pamuzhak_PK.4a7b4932ee202332ebce.pdf",
     "static/media/primeicons.svg": "/pamuzhak_p_k/static/media/primeicons.c6e2053303524e39530c.svg",
     "static/media/Montserrat-BoldItalic.woff": "/pamuzhak_p_k/static/media/Montserrat-BoldItalic.bf331673b91821715c08.woff",
@@ -45,11 +45,11 @@
     "static/media/primeicons.ttf": "/pamuzhak_p_k/static/media/primeicons.91bacab1f083f2795272.ttf",
     "static/media/me.jpg": "/pamuzhak_p_k/static/media/me.bf01e96f1d8405be7b5b.jpg",
     "index.html": "/pamuzhak_p_k/index.html",
-    "main.ee2cbcd8.css.map": "/pamuzhak_p_k/static/css/main.ee2cbcd8.css.map",
-    "main.33cf899a.js.map": "/pamuzhak_p_k/static/js/main.33cf899a.js.map"
+    "main.7480f44a.css.map": "/pamuzhak_p_k/static/css/main.7480f44a.css.map",
+    "main.b34798c1.js.map": "/pamuzhak_p_k/static/js/main.b34798c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee2cbcd8.css",
-    "static/js/main.33cf899a.js"
+    "static/css/main.7480f44a.css",
+    "static/js/main.b34798c1.js"
   ]
 }

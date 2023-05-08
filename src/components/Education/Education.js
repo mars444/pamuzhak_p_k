@@ -285,7 +285,7 @@ export const Education = () => {
         <section style={{paddingTop: 100, maxWidth: 1000}} id="education">
             <div className="flex gap-1 align-items-center">
                 <h3 className="numbered-heading-title">02.</h3>
-                <h2 className="numbered-heading" >
+                <h2 className="numbered-heading text-4xl" >
                     Образование
                 </h2>
             </div>

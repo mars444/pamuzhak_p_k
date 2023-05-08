@@ -318,10 +318,6 @@ body {
     font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
     font-weight: 400;
 
-    @media (max-width: 480px) {
-      margin-bottom: -3px;
-      margin-right: 5px;
-    }
   }
 }
 
@@ -345,10 +341,6 @@ body {
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
 
-      @media (max-width: 480px) {
-        margin-bottom: -3px;
-        margin-right: 5px;
-      }
   }
 
 
@@ -409,4 +401,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .color {
   color: var(--primary);
+}
+
+.p-timeline-event-opposite {
+  @media (max-width: 1080px) {
+    display: none !important;
+  }
+}
+.p-timeline-event-content {
+  @media (max-width: 1080px) {
+    margin: 20px 0;
+  }
 }

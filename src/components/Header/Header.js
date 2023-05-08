@@ -14,7 +14,7 @@ export const Header = React.memo(() => {
     return (
         <header className='header flex justify-content-between gap-5 align-items-center'>
             <h1 className="logo">PK</h1>
-            <ol className="flex flex-grow-1 navList justify-content-end gap-5 align-items-center relative ">
+            <ol className="flex-grow-1 navList justify-content-end gap-5 align-items-center relative ">
                 {navLinks?.map(({label, url}, index) => {
                     return (
                         <li  style={{transitionDelay: `${index * 200}`}} key={label}>
@@ -24,8 +24,7 @@ export const Header = React.memo(() => {
                     )
                 })}
             </ol>
-            <div
-                className="fadedown-enter-done">
+            <div className={"menu-button-wrapper"}>
                 <a className="menu-button"
                    href="https://t.me/Mars_444"
                    target="_blank"
@@ -33,10 +32,11 @@ export const Header = React.memo(() => {
                     Связаться со мной
                 </a>
             </div>
+
             {/*<ThemePicker/>*/}
 
 
-                {/*<HamburgerMenu items={items}/>*/}
+                <HamburgerMenu items={navLinks}/>
 
 
         </header>

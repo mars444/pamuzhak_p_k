@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import PerfectScrollbar from 'react-perfect-scrollbar';
@@ -8,21 +8,9 @@ const COLORS = {
     primaryLight: "#B6EDC8",
 };
 
-const MenuLabel = styled.label`
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: ${COLORS.primaryLight};
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  z-index: 1000;
-  box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
-  text-align: center;
-`;
 
 const NavBackground = styled.div`
+  overflow: hidden;
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -39,9 +27,11 @@ const NavBackground = styled.div`
 `;
 
 const Icon = styled.span`
+  cursor: pointer;
+  z-index: 99999;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   position: relative;
-  background-color: ${(props) => (props.clicked ? "transparent" : "black")};
+  background-color: ${(props) => (props.clicked ? "transparent" : "#64ffda")};
   width: 1.5rem;
   margin-right: 0.5rem;
   height: 2px;
@@ -51,7 +41,7 @@ const Icon = styled.span`
   &::before,
   &::after {
     content: "";
-    background-color: black;
+    background-color: var(--primary);
     width: 2rem;
     height: 2px;
     display: inline-block;
@@ -85,23 +75,13 @@ const Navigation = styled.nav`
   transition: width 0.8s, opacity 0.8s;
 `;
 
-const List = styled.ul`
-  display: flex;
-  height: 100vh;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  white-space: nowrap;
-`;
-const ItemLink = styled(NavLink)`
-  display: inline-block;
+const ItemLink = styled.a`
+  cursor: pointer;
+  padding: 10px;
   font-size: 2rem;
   font-weight: 300;
   text-decoration: none;
   color: ${COLORS.primaryLight};
-  padding: 1rem 2rem;
   border-radius: 20px;
 
   background-image: linear-gradient(
@@ -111,7 +91,7 @@ const ItemLink = styled(NavLink)`
     #fff 50%
   );
   background-size: 240%;
-  transition: all 0.4s;
+  transition: all 1s;
 
   &:hover,
   &:active {
@@ -123,7 +103,17 @@ const ItemLink = styled(NavLink)`
 
 function HamburgerMenu({items}) {
     const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
+    const handleClick = () => {
+        setClick(!click)
+    };
+
+    useEffect(()=> {
+        if (click) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+        }
+    },[click])
     return (
         <>
             <div className='header__hamburger__button'  htmlFor="navi-toggle" onClick={handleClick}>
@@ -132,24 +122,17 @@ function HamburgerMenu({items}) {
             <NavBackground clicked={click}>&nbsp;</NavBackground>
 
             <Navigation className={'flex-grow-1 overflow-auto flex flex-column'} clicked={click}>
-                <PerfectScrollBar className='flex flex-column flex-grow-1'>
                     <div className={'flex flex-column m-auto m-5 align-items-center justify-content-center flex-grow-1'} style={{  whiteSpace: 'nowrap'}}>
                         {items.map((item, index)=> {
                             return (
-                                <ItemLink icon={'pi pi-times'} key={item.label + index} onClick={handleClick} to={item.to}>
+                                <ItemLink key={item.label + index} onClick={handleClick} href={item.url}>
                                     <div className='justify-content-center flex align-items-center'>
-                                        <i className={`mr-2 pi ${item.icon}`}></i>
                                         <div>{item.label.toUpperCase()}</div>
                                     </div>
-
-
                                 </ItemLink>
                             )
                         })}
                     </div>
-                </PerfectScrollBar>
-
-
             </Navigation>
         </>
     );

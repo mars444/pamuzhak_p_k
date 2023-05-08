@@ -6,13 +6,14 @@ import { Button } from 'primereact/button';
 import './Experience.scss';
 import {Container} from "../Container";
 import './Experience.scss'
+import {useMediaQuery} from "react-responsive";
 
 export const Experience = React.memo(() => {
     return (
         <div id={"experience"} style={{paddingTop: 100, maxWidth: 1000}} className={"flex flex-column"}>
             <div className="flex gap-1 align-items-center">
                 <h3 className="numbered-heading-title">03.</h3>
-                <h3 className="numbered-heading text-4xl">Опыт работы 2 года 8 месяцев</h3>
+                <h3 className="numbered-heading text-4xl">Опыт работы</h3>
             </div>
 
          <TimelineDemo/>
@@ -66,9 +67,13 @@ const TimelineDemo = () => {
         );
     };
 
+    const isMobile = useMediaQuery({ query: '(max-width: 1080px)' })
+
+    console.log('isMobile', isMobile)
+
     return (
             <div className="timeline-demo">
-                    <Timeline value={experience} align="alternate" className="customized-timeline" marker={customizedMarker} content={customizedContent} />
+                    <Timeline value={experience} align={isMobile ? "left" :  "alternate"} className="customized-timeline" marker={customizedMarker} content={customizedContent} />
             </div>
     );
 }

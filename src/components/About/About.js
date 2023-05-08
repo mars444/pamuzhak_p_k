@@ -5,6 +5,7 @@ import { Chip } from 'primereact/chip';
 import './About.scss'
 
 import mePhoto from '../../assets/images/me.jpg'
+import {useMediaQuery} from "react-responsive";
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -90,16 +91,18 @@ export const About = () => {
         {label: 'API Ymaps', icon: 'pi pi-apple'},
     ];
 
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+
     return (
-        <div className={"flex flex-column"} style={{maxWidth: 1000, paddingTop: 100}} id="about" >
+        <div className={"flex flex-column flex-wrap"} style={{maxWidth: 1000, paddingTop: 100}} id="about" >
             <div className="flex gap-1 align-items-center">
                 <h3 className="numbered-heading-title">01.</h3>
                 <h3 className="numbered-heading text-4xl">Обо мне</h3>
             </div>
 
 
-            <div className="flex flex-column align-items-start">
-                <div  className="flex gap-7 align-items-start">
+            <div className="flex flex-column align-items-start flex-wrap">
+                <div  className="flex gap-2 lg:gap-7 align-items-start flex-wrap lg:flex-nowrap">
                     <div className={"text-xl"}>
                         <p>
                             Я всегда был увлечен технологиями и компьютерами, но когда я впервые начал изучать фронтенд-разработку, я понял, что это именно то, чем я хочу заниматься.
@@ -112,7 +115,7 @@ export const About = () => {
                         <p>Для меня фронтенд-разработка - это не просто работа, это моя страсть
                         </p>
                     </div>
-                        <div className="box  relative">
+                        <div className="box m-auto  relative">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -121,7 +124,7 @@ export const About = () => {
                                 <img
                                     className="img"
                                     src={mePhoto}
-                                    width={400}
+                                    style={{maxWidth: isMobile ? 300 : 400}}
                                     alt="Headshot"
                                 />
                             </div>

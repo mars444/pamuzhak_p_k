@@ -180,6 +180,11 @@
     box-shadow: 20px 0 70px  var(--primary);
     color:  var(--primary);
   }
+
+  @media (max-width: 768px) {
+    margin: auto;
+  }
+
 }
 
 .resume-btn span:nth-child(1) {

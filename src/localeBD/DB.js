@@ -114,23 +114,23 @@ const social =  [
     {
         label: 'Обо мне',
         // url: '/#about',
-        url: '/pamuzhak_p_k#about',
+        url: '#about',
     },
     {
         label: 'Образование',
         // url: '/#education',
-        url: '/pamuzhak_p_k#education',
+        url: '#education',
     },
     {
         label: 'Опыт работы',
         // url: '/#experience',
-        url: '/pamuzhak_p_k#experience',
+        url: '#experience',
     },
 
     {
         label: 'Контакты',
         // url: '/#contact',
-        url: '/pamuzhak_p_k#contact',
+        url: '#contact',
     },
 ]
 

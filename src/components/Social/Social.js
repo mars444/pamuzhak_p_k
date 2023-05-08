@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Side} from "../Side/Side";
+import {useMediaQuery} from "react-responsive";
 
 const StyledSocialList = styled.ul`
   display: flex;
@@ -9,8 +10,15 @@ const StyledSocialList = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (max-width: 1080px) {
+    padding-bottom: 300px;
+  }
+
 
   &:after {
+    @media (max-width: 1080px) {
+      display: none;
+    }
     content: '';
     display: block;
     width: 1px;
@@ -64,17 +72,20 @@ const   socialMedia = [
     },
 ]
 
-export const Social = ({ isHome }) => (
-    <Side isHome={isHome} orientation="left">
-        <StyledSocialList>
-            {socialMedia &&
-                socialMedia.map(({ url, icon }, i) => (
-                    <li key={i}>
-                        <a href={url} aria-label={icon} target="_blank" rel="noreferrer">
-                            <i  className={icon}></i>
-                        </a>
-                    </li>
-                ))}
-        </StyledSocialList>
-    </Side>
-);
+export const Social = ({ isHome }) => {
+    const isMobile = useMediaQuery({ query: '(max-width: 1080px)' })
+    return  (
+        <Side isHome={isHome} orientation={isMobile ? "right" : "left"}>
+            <StyledSocialList>
+                {socialMedia &&
+                    socialMedia.map(({ url, icon }, i) => (
+                        <li key={i}>
+                            <a href={url} aria-label={icon} target="_blank" rel="noreferrer">
+                                <i  className={icon}></i>
+                            </a>
+                        </li>
+                    ))}
+            </StyledSocialList>
+        </Side>
+    );
+}

@@ -68,9 +68,6 @@ const TimelineDemo = () => {
     };
 
     const isMobile = useMediaQuery({ query: '(max-width: 1080px)' })
-
-    console.log('isMobile', isMobile)
-
     return (
             <div className="timeline-demo">
                     <Timeline value={experience} align={isMobile ? "left" :  "alternate"} className="customized-timeline" marker={customizedMarker} content={customizedContent} />

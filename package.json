@@ -1,7 +1,7 @@
 {
   "name": "alsdent",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://mars444.github.io/pamuzhak_p_k/",
   "author": "Petr Pamuzhak",
   "dependencies": {

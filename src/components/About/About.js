@@ -104,16 +104,35 @@ export const About = () => {
             <div className="flex flex-column align-items-start flex-wrap">
                 <div  className="flex gap-2 lg:gap-7 align-items-start flex-wrap lg:flex-nowrap">
                     <div className={"text-xl"}>
-                        <p>
-                            Я всегда был увлечен технологиями и компьютерами, но когда я впервые начал изучать фронтенд-разработку, я понял, что это именно то, чем я хочу заниматься.
-                        </p>
+                        <h4>
+                            Люблю создавать красивые и функциональные веб-приложения, которые помогают решать бизнес-задачи.
+                        </h4>
 
-                        <p>Люблю создавать красивые и функциональные веб-приложения, которые помогают людям решать их задачи.</p>
 
-                        <p>Я постоянно совершенствую свои навыки, изучая новые фреймворки и библиотеки. Я часто принимаю участие в онлайн-курсах и конференциях, чтобы быть в курсе последних тенденций и новых технологий.
-                        </p>
-                        <p>Для меня фронтенд-разработка - это не просто работа, это моя страсть.
-                        </p>
+                        <h4>Мои ключевые навыки:</h4>
+                        <ul>
+                            <li>
+                                - Отличные знания HTML, CSS и JavaScript ES2023+ (Async/await, Promise, EventLoop, Prototype, Proxy, Compose, динамические импорты, генераторы, итераторы, декораторы, Browser API);
+                            </li>
+
+                            <li> - Отличные знания по React (React Hooks, классовые компоненты, React Fiber, HOC, Props Drilling, Render Props, ErrorBoundary); </li>
+                            <li> - Хорошие знания по TypeScript (Utility Types, Literal Types, Generics, Type Guards, Infer); </li>
+                            <li> - Умение работать со State менеджерами (React-Redux, Redux Toolkit, а также с библиотеками Immutable js, Immer js, redux-thunk). </li>
+                        </ul>
+                        <br/>
+                            <ul>
+                                <li> - Умение разворачивать проект с нуля. используя Webpack или Vite;</li>
+                                <li> - Умение работать c REST API и HTTP;</li>
+                                <li> - Умение работать со Swagger;</li>
+                                <li> - Умение работать в Figma (Компоненты, Вариативность, Prototype);</li>
+                                <li> - Умение работать с Linux, Docker;</li>
+                                <li>  - Опыт работы с UI библиотеками Primereact и Material UI;</li>
+                                <li> - Опыт работы с библиотеками стилей Primeflex, Tailwind, Bootstrap;</li>
+                                <li> - Опыт работы библиотекой для работы с формами React Final Form;</li>
+                                <li> - Опыт работы c task менеджерами Trello, Jira, Яндекс Трекер.</li>
+                            </ul>
+
+                            <p>Я постоянно совершенствую свои навыки. Часто посещаю конференции, онлайн-курсы, чтобы быть в курсе последних тенденций и новых технологий.</p>
                     </div>
                         <div className="box m-auto  relative">
                             <span></span>
@@ -131,14 +150,58 @@ export const About = () => {
                     </div>
                 </div>
                 <div>
-                    <p className={"text-xl"}>Мой стэк технологий:</p>
-                    <ul className="flex gap-3 flex-wrap">
-                        {skills && skills.map((skill, i) => {
-                            return (
-                                <Chip label={skill.label}  className="chip py-1 px-2 " />
-                            )
-                        })}
-                    </ul>
+                    <div className="flex gap-5 flex-wrap flex-column">
+                        <div className="flex flex-column gap-1">
+                            <h4>📚 Frameworks, Platforms and Libraries</h4>
+                            <div className={"flex flex-wrap gap-5"}>
+                                <img style={{height: 35}} src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/redux-%2320232a.svg?style=for-the-badge&logo=redux&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/vite-%238DD6F9.svg?style=for-the-badge&logo=vite&logoColor=black" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white" alt=""/>
+                            </div>
+                        </div>
+
+
+                        <div className="flex flex-column gap-1">
+                            <h4>💾 Databases</h4>
+                            <div className={"flex flex-wrap gap-5"}>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/oracle-%23316192.svg?style=for-the-badge&logo=oracle&logoColor=black" alt=""/>
+                            </div>
+                        </div>
+
+
+                        <div className="flex flex-column gap-1">
+                            <h4>🎨 Design</h4>
+                            <div className={"flex flex-wrap gap-5"}>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white" alt=""/>
+                            </div>
+                        </div>
+
+
+                        <div className="flex flex-column gap-1">
+                            <h4>🥅 Other</h4>
+                            <div className={"flex flex-wrap gap-5"}>
+                                <img style={{height: 35}} src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/trello-%230A0FFF.svg?style=for-the-badge&logo=trello&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/docker-%230db7ed.svg?&style=for-the-badge&logo=docker&logoColor=white" alt=""/>
+                                <img style={{height: 35}}  src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt=""/>
+                            </div>
+                        </div>
+
+
+                        {/*{skills && skills.map((skill, i) => {*/}
+                        {/*    return (*/}
+                        {/*        <Chip label={skill.label}  className="chip py-1 px-2 " />*/}
+                        {/*    )*/}
+                        {/*})}*/}
+                    </div>
                 </div>
 
                 </div>

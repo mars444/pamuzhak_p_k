@@ -14,6 +14,8 @@ import {Email} from "./components/Email/Email";
 import {Social} from "./components/Social/Social";
 import {Education} from "./components/Education/Education";
 
+const { version } = require('./../package.json');
+
 // Little helpers ...
 const url = (name, wrap ) =>
     `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
@@ -33,6 +35,7 @@ function App() {
                       <Education/>
                       <Experience/>
                       <Contacts/>
+                      <div className=" text-sm flex justify-content-center align-items-center w-full">v.{version}</div>
                   </div>
 
 

@@ -91,7 +91,7 @@ export const About = () => {
         {label: 'API Ymaps', icon: 'pi pi-apple'},
     ];
 
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+    const isMobile = useMediaQuery({ query: '(max-width: 1100px)' })
 
     return (
         <div className={"flex flex-column flex-wrap"} style={{maxWidth: 1000, paddingTop: 100}} id="about" >
@@ -110,7 +110,7 @@ export const About = () => {
 
 
                         <h4>Мои ключевые навыки:</h4>
-                        <div className={"flex flex-column -ml-4"}>
+                        <div className={`flex flex-column ${!isMobile && '-ml-4'}`}>
                             <ul>
                                 <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
                                     <span>

@@ -13,7 +13,7 @@ export const Header = React.memo(() => {
 
     return (
         <header className='header flex justify-content-between gap-5 align-items-center'>
-            <h1 className="logo">PK</h1>
+            <h1 className="logo"><a href={'/'}>PK</a></h1>
             <ol className="flex-grow-1 navList justify-content-end gap-5 align-items-center relative ">
                 {navLinks?.map(({label, url}, index) => {
                     return (

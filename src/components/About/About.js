@@ -103,36 +103,81 @@ export const About = () => {
 
             <div className="flex flex-column align-items-start flex-wrap">
                 <div  className="flex gap-2 lg:gap-7 align-items-start flex-wrap lg:flex-nowrap">
-                    <div className={"text-xl"}>
+                    <div className={"text-xl -ml"}>
                         <h4>
                             Люблю создавать красивые и функциональные веб-приложения, которые помогают решать бизнес-задачи.
                         </h4>
 
 
                         <h4>Мои ключевые навыки:</h4>
-                        <ul>
-                            <li>
-                                - Отличные знания HTML, CSS и JavaScript ES2023+ (Async/await, Promise, EventLoop, Prototype, Proxy, Compose, динамические импорты, генераторы, итераторы, декораторы, Browser API);
-                            </li>
-
-                            <li> - Отличные знания по React (React Hooks, классовые компоненты, React Fiber, HOC, Props Drilling, Render Props, ErrorBoundary); </li>
-                            <li> - Хорошие знания по TypeScript (Utility Types, Literal Types, Generics, Type Guards, Infer); </li>
-                            <li> - Умение работать со State менеджерами (React-Redux, Redux Toolkit, а также с библиотеками Immutable js, Immer js, redux-thunk). </li>
-                        </ul>
-                        <br/>
+                        <div className={"flex flex-column -ml-4"}>
                             <ul>
-                                <li> - Умение разворачивать проект с нуля. используя Webpack или Vite;</li>
-                                <li> - Умение работать c REST API и HTTP;</li>
-                                <li> - Умение работать со Swagger;</li>
-                                <li> - Умение работать в Figma (Компоненты, Вариативность, Prototype);</li>
-                                <li> - Умение работать с Linux, Docker;</li>
-                                <li>  - Опыт работы с UI библиотеками Primereact и Material UI;</li>
-                                <li> - Опыт работы с библиотеками стилей Primeflex, Tailwind, Bootstrap;</li>
-                                <li> - Опыт работы библиотекой для работы с формами React Final Form;</li>
-                                <li> - Опыт работы c task менеджерами Trello, Jira, Яндекс Трекер.</li>
-                            </ul>
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
+                                    <span>
+                                    Отличные знания HTML, CSS и JavaScript ES2023+ (Async/await, Promise, EventLoop, Browser API);
+                                </span>
+                                </li>
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
+                                    <span>
+                                    Отличные знания по React (Hooks, классовые компоненты,Fiber, HOC, Props Drilling, Render Props);
+                                </span>
+                                </li>
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
+                                    <span>
+                                    Хорошие знания по TypeScript (Utility Types, Literal Types, Generics, Type Guards);
+                                </span>
+                                </li>
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
+                                    <span>
+                                    Умение работать со State менеджерами (React-Redux, Redux Toolkit, а также с библиотеками Immutable js, Immer js, redux-thunk).
+                                </span>
+                                </li>
 
-                            <p>Я постоянно совершенствую свои навыки. Часто посещаю конференции, онлайн-курсы, чтобы быть в курсе последних тенденций и новых технологий.</p>
+
+                            </ul>
+                            <ul>
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                    <span>
+                                        Умение разворачивать проект с нуля, используя Webpack или Vite;
+                                    </span>
+                                </li>
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                    <span>
+                                        Умение работать c REST API, HTTP, Swagger;
+                                    </span>
+                                </li>
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                    <span>
+                                       Умение работать в Figma (Компоненты, Вариативность, Prototype);
+                                    </span>
+                                </li>            <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                <span>
+                                        Умение работать с Linux, Docker;
+                                    </span>
+                            </li>            <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                <span>
+                                        Опыт работы с UI библиотеками Primereact и Material UI, а также Storybook;
+                                    </span>
+                            </li>            <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                <span>
+                                       Опыт работы с библиотеками стилей Primeflex, Tailwind, Bootstrap;
+                                    </span>
+                            </li>
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                    <span>
+                                        Опыт работы библиотекой для работы с формами React Final Form;
+                                    </span>
+                                </li>
+
+                                <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                    <span>
+                                         Опыт работы c task менеджерами Trello, Jira, Яндекс Трекер.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+
                     </div>
                         <div className="box m-auto  relative">
                             <span></span>
@@ -149,11 +194,12 @@ export const About = () => {
                             </div>
                     </div>
                 </div>
+                <h5 className="text-xl my-4">Я постоянно совершенствую свои навыки. Часто посещаю конференции, онлайн-курсы, чтобы быть в курсе последних тенденций и новых технологий.</h5>
                 <div>
-                    <div className="flex gap-5 flex-wrap flex-column">
+                    <div className="flex gap-5 flex-wrap flex-column mt-3">
                         <div className="flex flex-column gap-1">
                             <h4>📚 Frameworks, Platforms and Libraries</h4>
-                            <div className={"flex flex-wrap gap-5"}>
+                            <div className={"flex flex-wrap gap-4"}>
                                 <img style={{height: 35}} src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt=""/>
                                 <img style={{height: 35}}  src="https://img.shields.io/badge/redux-%2320232a.svg?style=for-the-badge&logo=redux&logoColor=white" alt=""/>
                                 <img style={{height: 35}}  src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black" alt=""/>

@@ -91,7 +91,7 @@ export const About = () => {
         {label: 'API Ymaps', icon: 'pi pi-apple'},
     ];
 
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+    const isMobile = useMediaQuery({ query: '(max-width: 1100px)' })
 
     return (
         <div className={"flex flex-column flex-wrap"} style={{maxWidth: 1000, paddingTop: 100}} id="about" >
@@ -101,39 +101,84 @@ export const About = () => {
             </div>
 
 
-            <div className="flex flex-column align-items-start flex-wrap">
-                <div  className="flex gap-2 lg:gap-7 align-items-start flex-wrap lg:flex-nowrap">
-                    <div className={"text-xl"}>
-                        <h4>
-                            Люблю создавать красивые и функциональные веб-приложения, которые помогают решать бизнес-задачи.
-                        </h4>
+            <div className="flex  align-items-start flex-wrap">
+                <div  className="flex flex-column  flex-wrap  gap-2  align-items-start flex-wrap lg:flex-nowrap">
+                    <div className="flex gap-4  flex-wrap lg:flex-nowrap " style={{minWidth: 400}}>
+                        <div>
+                            <h4>
+                                Люблю создавать красивые и функциональные веб-приложения, которые помогают решать бизнес-задачи.
+                            </h4>
 
 
-                        <h4>Мои ключевые навыки:</h4>
-                        <ul>
-                            <li>
-                                - Отличные знания HTML, CSS и JavaScript ES2023+ (Async/await, Promise, EventLoop, Prototype, Proxy, Compose, динамические импорты, генераторы, итераторы, декораторы, Browser API);
-                            </li>
+                            <h4>Мои ключевые навыки:</h4>
+                            <div className={`flex flex-column`}>
+                                <ul>
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
+                                        <span>
+                                    Отличные знания HTML, CSS и JavaScript ES2023+ (Async/await, Promise, EventLoop, Browser API);
+                                </span>
+                                    </li>
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
+                                        <span>
+                                    Отличные знания по React (Hooks, классовые компоненты,Fiber, HOC, Props Drilling, Render Props);
+                                </span>
+                                    </li>
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
+                                        <span>
+                                    Хорошие знания по TypeScript (Utility Types, Literal Types, Generics, Type Guards);
+                                </span>
+                                    </li>
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-circle-fill`}></i>
+                                        <span>
+                                    Умение работать со State менеджерами (React-Redux, Redux Toolkit, а также с библиотеками Immutable js, Immer js, redux-thunk).
+                                </span>
+                                    </li>
 
-                            <li> - Отличные знания по React (React Hooks, классовые компоненты, React Fiber, HOC, Props Drilling, Render Props, ErrorBoundary); </li>
-                            <li> - Хорошие знания по TypeScript (Utility Types, Literal Types, Generics, Type Guards, Infer); </li>
-                            <li> - Умение работать со State менеджерами (React-Redux, Redux Toolkit, а также с библиотеками Immutable js, Immer js, redux-thunk). </li>
-                        </ul>
-                        <br/>
-                            <ul>
-                                <li> - Умение разворачивать проект с нуля. используя Webpack или Vite;</li>
-                                <li> - Умение работать c REST API и HTTP;</li>
-                                <li> - Умение работать со Swagger;</li>
-                                <li> - Умение работать в Figma (Компоненты, Вариативность, Prototype);</li>
-                                <li> - Умение работать с Linux, Docker;</li>
-                                <li>  - Опыт работы с UI библиотеками Primereact и Material UI;</li>
-                                <li> - Опыт работы с библиотеками стилей Primeflex, Tailwind, Bootstrap;</li>
-                                <li> - Опыт работы библиотекой для работы с формами React Final Form;</li>
-                                <li> - Опыт работы c task менеджерами Trello, Jira, Яндекс Трекер.</li>
-                            </ul>
 
-                            <p>Я постоянно совершенствую свои навыки. Часто посещаю конференции, онлайн-курсы, чтобы быть в курсе последних тенденций и новых технологий.</p>
-                    </div>
+                                </ul>
+                                <ul>
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                        <span>
+                                        Умение разворачивать проект с нуля, используя Webpack или Vite;
+                                    </span>
+                                    </li>
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                        <span>
+                                        Умение работать c REST API, HTTP, Swagger;
+                                    </span>
+                                    </li>
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                        <span>
+                                       Умение работать в Figma (Компоненты, Вариативность, Prototype);
+                                    </span>
+                                    </li>            <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                    <span>
+                                        Умение работать с Linux, Docker;
+                                    </span>
+                                </li>            <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                    <span>
+                                        Опыт работы с UI библиотеками Primereact и Material UI, а также Storybook;
+                                    </span>
+                                </li>            <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                    <span>
+                                       Опыт работы с библиотеками стилей Primeflex, Tailwind, Bootstrap;
+                                    </span>
+                                </li>
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                        <span>
+                                        Опыт работы библиотекой для работы с формами React Final Form;
+                                    </span>
+                                    </li>
+
+                                    <li className={"text-left flex align-items-center py-2"}> <i className={`mr-2 color pi pi-angle-double-up`}></i>
+                                        <span>
+                                         Опыт работы c task менеджерами Trello, Jira, Яндекс Трекер.
+                                    </span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
                         <div className="box m-auto  relative">
                             <span></span>
                             <span></span>
@@ -147,48 +192,55 @@ export const About = () => {
                                     alt="Headshot"
                                 />
                             </div>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div className="flex gap-5 flex-wrap flex-column">
-                        <div className="flex flex-column gap-1">
-                            <h4>📚 Технологии и библиотеки</h4>
-                            <div className={"flex flex-wrap gap-5"}>
-                                <img style={{height: 35}} src="https://img.shields.io/badge/html5-%2320232a.svg?style=for-the-badge&logo=html5" alt=""/>
-                                <img style={{height: 35}} src="https://img.shields.io/badge/css3-%2320232a.svg?style=for-the-badge&logo=css3" alt=""/>
-                                <img style={{height: 35}} src="https://img.shields.io/badge/javascript-%2320232a.svg?style=for-the-badge&logo=javascript" alt=""/>
-                                <img style={{height: 35}} src="https://img.shields.io/badge/typescript-%2320232a.svg?style=for-the-badge&logo=typescript" alt=""/>
-                                <img style={{height: 35}} src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/redux-%2320232a.svg?style=for-the-badge&logo=redux" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/webpack-%2320232a.svg?style=for-the-badge&logo=webpack" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/vite-%2320232a.svg?style=for-the-badge&logo=vite" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/SASS-%2320232a.svg?style=for-the-badge&logo=SASS" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/NPM-%2320232a.svg?style=for-the-badge&logo=npm" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/ESLint-%2320232a?style=for-the-badge&logo=eslint" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/git-%2320232a?style=for-the-badge&logo=git" alt=""/>
+
+                    <div>
+
+
+                        <h5 className="text-xl my-4">Я постоянно совершенствую свои навыки. Часто посещаю конференции, онлайн-курсы, чтобы быть в курсе последних тенденций и новых технологий.</h5>
+                        <div className="flex gap-5 flex-wrap flex-column mt-3">
+                            <div className="flex flex-column gap-1">
+                                <h4>📚 Технологии и библиотеки</h4>
+                                <div className={"flex flex-wrap gap-3"}>
+                                    <img style={{height: 35}} src="https://img.shields.io/badge/html5-%2320232a.svg?style=for-the-badge&logo=html5" alt=""/>
+                                    <img style={{height: 35}} src="https://img.shields.io/badge/css3-%2320232a.svg?style=for-the-badge&logo=css3" alt=""/>
+                                    <img style={{height: 35}} src="https://img.shields.io/badge/javascript-%2320232a.svg?style=for-the-badge&logo=javascript" alt=""/>
+                                    <img style={{height: 35}} src="https://img.shields.io/badge/typescript-%2320232a.svg?style=for-the-badge&logo=typescript" alt=""/>
+                                    <img style={{height: 35}} src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/redux-%2320232a.svg?style=for-the-badge&logo=redux" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/webpack-%2320232a.svg?style=for-the-badge&logo=webpack" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/vite-%2320232a.svg?style=for-the-badge&logo=vite" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/SASS-%2320232a.svg?style=for-the-badge&logo=SASS" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/NPM-%2320232a.svg?style=for-the-badge&logo=npm" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/ESLint-%2320232a?style=for-the-badge&logo=eslint" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/git-%2320232a?style=for-the-badge&logo=git" alt=""/>
+                                </div>
+                            </div>
+
+
+                            <div className="flex flex-column gap-1">
+                                <h4>🎨 UI</h4>
+                                <div className={"flex flex-wrap gap-3"}>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/figma-%2320232a.svg?style=for-the-badge&logo=figma" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/adobe%20photoshop-%2320232a.svg?style=for-the-badge&logo=adobe%20photoshop" alt=""/>
+                                </div>
+                            </div>
+
+
+                            <div className="flex flex-column gap-1">
+                                <h4>🥅 Прочее</h4>
+                                <div className={"flex flex-wrap gap-3"}>
+                                    <img style={{height: 35}} src="https://img.shields.io/badge/Linux-%2320232a?style=for-the-badge&logo=linux" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/jira-%2320232a.svg?style=for-the-badge&logo=jira" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/trello-%2320232a.svg?style=for-the-badge&logo=trello" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/-Swagger-%2320232a?style=for-the-badge&logo=swagger" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/docker-%2320232a.svg?&style=for-the-badge&logo=docker" alt=""/>
+                                    <img style={{height: 35}}  src="https://img.shields.io/badge/Postman-%2320232a?style=for-the-badge&logo=postman" alt=""/>
+                                </div>
                             </div>
                         </div>
-
-
-                        <div className="flex flex-column gap-1">
-                            <h4>🎨 UI</h4>
-                            <div className={"flex flex-wrap gap-5"}>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/figma-%2320232a.svg?style=for-the-badge&logo=figma" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/adobe%20photoshop-%2320232a.svg?style=for-the-badge&logo=adobe%20photoshop" alt=""/>
-                            </div>
-                        </div>
-
-
-                        <div className="flex flex-column gap-1">
-                            <h4>🥅 Прочее</h4>
-                            <div className={"flex flex-wrap gap-5"}>
-                                <img style={{height: 35}} src="https://img.shields.io/badge/Linux-%2320232a?style=for-the-badge&logo=linux" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/jira-%2320232a.svg?style=for-the-badge&logo=jira" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/trello-%2320232a.svg?style=for-the-badge&logo=trello" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/-Swagger-%2320232a?style=for-the-badge&logo=swagger" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/docker-%2320232a.svg?&style=for-the-badge&logo=docker" alt=""/>
-                                <img style={{height: 35}}  src="https://img.shields.io/badge/Postman-%2320232a?style=for-the-badge&logo=postman" alt=""/>
-                            </div>
+                        <div>
                         </div>
 
 
@@ -199,8 +251,7 @@ export const About = () => {
                         {/*})}*/}
                     </div>
                 </div>
-
-                </div>
+            </div>
         </div>
     );
 };

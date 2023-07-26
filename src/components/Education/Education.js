@@ -282,7 +282,7 @@ const StyledProject = styled.li`
 
 export const Education = () => {
     return (
-        <section style={{paddingTop: 100, maxWidth: 1000}} id="education">
+        <section className={"w-full"} style={{paddingTop: 100, maxWidth: 1000}} id="education">
             <div className="flex gap-1 align-items-center">
                 <h3 className="numbered-heading-title">02.</h3>
                 <h2 className="numbered-heading text-4xl" >

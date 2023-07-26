@@ -103,7 +103,7 @@ export const About = () => {
 
             <div className="flex  align-items-start flex-wrap">
                 <div  className="flex flex-column  flex-wrap  gap-2  align-items-start flex-wrap lg:flex-nowrap">
-                    <div className="flex gap-4  flex-wrap lg:flex-nowrap " style={{minWidth: 400}}>
+                    <div className="flex gap-4  flex-wrap lg:flex-nowrap ">
                         <div>
                             <h4>
                                 Люблю создавать красивые и функциональные веб-приложения, которые помогают решать бизнес-задачи.

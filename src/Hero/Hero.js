@@ -19,11 +19,7 @@ export const Hero = () => {
     );
     const five = (
         <div className="py-5">
-            <a  className="resume-btn text-2xl" href={resume} target="_blank" rel="noreferrer">
-                <span> </span>
-                <span> </span>
-                <span> </span>
-                <span> </span>
+            <a  className="menu-button text-2xl" href={resume} target="_blank" rel="noreferrer">
                 Резюме
             </a>
             <a>

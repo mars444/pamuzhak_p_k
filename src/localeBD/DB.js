@@ -1,7 +1,7 @@
 
 export const experience = [
     {
-        interval: 'Январь 2022 — по настоящее время',
+        interval: 'Июль 2021 — по настоящее время',
         company: 'АО «Паспорт.Цифровые продукты» (АО «П.ЦП»)',
         position: 'Frontend - разработчик',
         url: 'https://ppdp.ru/',
@@ -60,7 +60,7 @@ export const experience = [
         ]
     },
     {
-        interval: 'Сентябрь 2020 — Декабрь 2021',
+        interval: 'Июль 2020 — Июнь 2021',
         company: 'Детский центр "Шаробот"',
         position: 'Преподаватель по программированию',
         url: 'https://sharobot.ru/msk',

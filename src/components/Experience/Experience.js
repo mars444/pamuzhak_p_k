@@ -13,7 +13,7 @@ export const Experience = React.memo(() => {
         <div id={"experience"} style={{paddingTop: 100, maxWidth: 1000}} className={"flex flex-column"}>
             <div className="flex gap-1 align-items-center">
                 <h3 className="numbered-heading-title">03.</h3>
-                <h3 className="numbered-heading text-4xl">Опыт работы</h3>
+                <h3 className="numbered-heading text-4xl">Опыт работы (3 года 1 месяц)</h3>
             </div>
 
          <TimelineDemo/>

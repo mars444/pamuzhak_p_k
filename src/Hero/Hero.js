@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion";
 import {TransitionGroup, CSSTransition} from "react-transition-group";
 import './Hero.scss'
-import resume from '../assets/pdf/Pamuzhak_PK_Frontend_Middle.pdf'
+import resume from '../assets/pdf/Pamuzhak_PK_Middle_Frontend.pdf'
 
 export const Hero = () => {
 
